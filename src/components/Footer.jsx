@@ -21,8 +21,8 @@ export default function Footer({ onOpenPitch }) {
           </div>
         </div>
 
-        {/* BOLD HIRE ME CALLOUT & CONTACT MAIL */}
-        <div className="mb-12 max-w-lg w-full p-8 rounded-2xl bg-[#171310] border border-[#C5A059]/40 text-center shadow-[0_15px_45px_rgba(197,160,89,0.15)] relative overflow-hidden">
+        {/* BOLD HIRE ME CALLOUT & CONTACT */}
+        <div className="mb-12 max-w-xl w-full p-8 rounded-2xl bg-[#171310] border border-[#C5A059]/40 text-center shadow-[0_15px_45px_rgba(197,160,89,0.15)] relative overflow-hidden">
           <div className="absolute top-0 right-0 w-32 h-32 bg-[#C5A059]/10 rounded-full blur-2xl pointer-events-none" />
           
           <div className="text-2xl sm:text-3xl font-black text-[#F0EAE1] tracking-wide mb-3">
@@ -33,20 +33,34 @@ export default function Footer({ onOpenPitch }) {
             If you love this independent creative campaign, cognitive neuromarketing strategy, and digital craftsmanship—let's build the future of Swaadly together.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+          <div className="flex flex-wrap items-center justify-center gap-3">
             <a
               href="mailto:swaadly@proton.me"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#C5A059] hover:bg-[#D4AF65] text-[#0F0C0A] font-['Cinzel'] text-xs uppercase tracking-widest font-bold transition-all shadow-md hover:scale-105 active:scale-95"
             >
               <Mail className="w-4 h-4" />
-              <span>swaadly.proton.me</span>
+              <span>swaadly@proton.me</span>
+            </a>
+
+            <a
+              href="https://www.instagram.com/swaadly_unofficial?vrfl=MWloOTN6c2d5djZzYg=="
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-3 rounded-full border border-[#E1306C]/50 hover:border-[#E1306C] bg-gradient-to-r from-[#E1306C]/15 to-[#F77737]/15 hover:from-[#E1306C]/30 hover:to-[#F77737]/30 text-[#F0EAE1] text-xs font-['Cinzel'] uppercase tracking-wider transition-all"
+            >
+              <svg className="w-4 h-4 text-[#E1306C]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+              </svg>
+              <span>@swaadly_unofficial</span>
             </a>
 
             <button
               onClick={onOpenPitch}
-              className="px-5 py-3 rounded-full border border-[#C5A059]/40 hover:border-[#C5A059] bg-[#C5A059]/10 hover:bg-[#C5A059]/20 text-[#F0EAE1] text-xs font-['Cinzel'] uppercase tracking-wider transition-all cursor-pointer"
+              className="px-5 py-3 rounded-full border border-white/20 hover:border-[#C5A059] bg-white/5 hover:bg-[#C5A059]/10 text-[#F0EAE1] text-xs font-['Cinzel'] uppercase tracking-wider transition-all cursor-pointer"
             >
-              Read Full Proposal
+              Proposal
             </button>
           </div>
         </div>
@@ -62,23 +76,37 @@ export default function Footer({ onOpenPitch }) {
         </div>
 
         {/* External Links */}
-        <div className="flex items-center justify-center gap-6 text-xs font-['Cinzel'] tracking-[0.2em] text-[#D4C4B5]/70 uppercase mb-8">
+        <div className="flex flex-wrap items-center justify-center gap-6 text-xs font-['Cinzel'] tracking-[0.2em] text-[#D4C4B5]/70 uppercase mb-8">
           <a 
             href="https://www.swaadly.com" 
             target="_blank" 
             rel="noopener noreferrer"
             className="hover:text-[#C5A059] flex items-center gap-1.5 transition-colors"
           >
-            <span>Official Website (swaadly.com)</span>
+            <span>Official Store</span>
             <ExternalLink className="w-3.5 h-3.5" />
+          </a>
+          <span>·</span>
+          <a 
+            href="https://www.instagram.com/swaadly_unofficial?vrfl=MWloOTN6c2d5djZzYg=="
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hover:text-[#E1306C] flex items-center gap-1.5 transition-colors text-[#C5A059]"
+          >
+            <svg className="w-3.5 h-3.5 text-[#E1306C]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+            </svg>
+            <span>Instagram</span>
           </a>
           <span>·</span>
           <a 
             href="mailto:swaadly@proton.me"
             className="hover:text-[#C5A059] flex items-center gap-1.5 transition-colors"
           >
-            <span>swaadly.proton.me</span>
             <Mail className="w-3.5 h-3.5" />
+            <span>swaadly@proton.me</span>
           </a>
         </div>
 

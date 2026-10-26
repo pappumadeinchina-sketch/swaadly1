@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, ExternalLink, Mail, Heart } from 'lucide-react';
+import { X, ExternalLink, Mail } from 'lucide-react';
 
 export default function BrandManifestoModal({ isOpen, onClose }) {
   if (!isOpen) return null;
@@ -40,13 +40,29 @@ export default function BrandManifestoModal({ isOpen, onClose }) {
           <p className="text-xs text-[#D4C4B5]/80 font-light mb-4">
             Passionate about transforming brand narratives into unforgettable digital art and cognitive consumer experiences.
           </p>
-          <a
-            href="mailto:swaadly@proton.me"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#C5A059] text-[#0F0C0A] text-xs font-['Cinzel'] uppercase tracking-widest font-bold shadow-md hover:bg-[#D4AF65] transition-all"
-          >
-            <Mail className="w-3.5 h-3.5" />
-            <span>Reach out: swaadly.proton.me</span>
-          </a>
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            <a
+              href="mailto:swaadly@proton.me"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#C5A059] text-[#0F0C0A] text-xs font-['Cinzel'] uppercase tracking-widest font-bold shadow-md hover:bg-[#D4AF65] transition-all"
+            >
+              <Mail className="w-3.5 h-3.5" />
+              <span>swaadly@proton.me</span>
+            </a>
+
+            <a
+              href="https://www.instagram.com/swaadly_unofficial?vrfl=MWloOTN6c2d5djZzYg=="
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-[#E1306C]/40 hover:border-[#E1306C] bg-[#E1306C]/10 text-[#F0EAE1] text-xs font-['Cinzel'] uppercase tracking-wider transition-all"
+            >
+              <svg className="w-3.5 h-3.5 text-[#E1306C]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+              </svg>
+              <span>@swaadly_unofficial</span>
+            </a>
+          </div>
         </div>
 
         {/* Letter / Editorial Proposal */}
@@ -93,18 +109,22 @@ export default function BrandManifestoModal({ isOpen, onClose }) {
         {/* Disclaimer & Official Link */}
         <div className="pt-6 border-t border-[#C5A059]/20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div className="text-[11px] text-[#D4C4B5]/50 font-light">
-            Independent creative proposal · Email: <strong className="text-[#C5A059]">swaadly.proton.me</strong>
+            Independent creative proposal · Email: <strong className="text-[#C5A059]">swaadly@proton.me</strong>
           </div>
 
           <div className="flex items-center gap-4">
             <a
-              href="https://www.swaadly.com"
+              href="https://www.instagram.com/swaadly_unofficial?vrfl=MWloOTN6c2d5djZzYg=="
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-xs font-['Cinzel'] tracking-wider text-[#C5A059] hover:underline uppercase"
+              className="inline-flex items-center gap-1.5 text-xs font-['Cinzel'] tracking-wider text-[#E1306C] hover:text-[#C5A059] uppercase transition-colors"
             >
-              <span>Visit swaadly.com</span>
-              <ExternalLink className="w-3.5 h-3.5" />
+              <svg className="w-4 h-4 text-[#E1306C]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+              </svg>
+              <span>@swaadly_unofficial</span>
             </a>
 
             <button

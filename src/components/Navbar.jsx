@@ -173,6 +173,22 @@ export default function Navbar({ onOpenPitch, onOpenManifesto }) {
               </span>
             </a>
 
+            {/* Instagram Profile */}
+            <a 
+              href="https://www.instagram.com/swaadly_unofficial?vrfl=MWloOTN6c2d5djZzYg==" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label="Instagram Profile" 
+              className="p-2.5 rounded-full bg-[#171310] border border-[#C5A059]/30 hover:border-[#E1306C] text-[#C5A059] hover:text-[#E1306C] transition-all group"
+              title="Instagram @swaadly_unofficial"
+            >
+              <svg className="w-4 h-4 text-[#C5A059] group-hover:text-[#E1306C] transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+              </svg>
+            </a>
+
             {/* Proposal button */}
             <button
               onClick={handleOpenProposal}
@@ -235,7 +251,7 @@ export default function Navbar({ onOpenPitch, onOpenManifesto }) {
           >
             Campaign Exhibition
           </a>
-          <div className="pt-3 border-t border-white/10 flex items-center justify-between gap-2">
+          <div className="pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2">
             <a 
               href="https://www.swaadly.com/cart" 
               target="_blank" 
@@ -244,6 +260,19 @@ export default function Navbar({ onOpenPitch, onOpenManifesto }) {
             >
               <img src="/assets/cart.svg" alt="" className="w-3.5 h-3.5 filter invert brightness-150" />
               <span>Cart (3)</span>
+            </a>
+            <a 
+              href="https://www.instagram.com/swaadly_unofficial?vrfl=MWloOTN6c2d5djZzYg==" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-xs text-[#E1306C] flex items-center gap-1.5 border border-[#E1306C]/40 bg-[#E1306C]/10 px-3 py-1.5 rounded-full"
+            >
+              <svg className="w-3.5 h-3.5 text-[#E1306C]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+              </svg>
+              <span>Instagram</span>
             </a>
             <a 
               href="https://www.swaadly.com/auth/login?redirect=%2Fprofile" 
