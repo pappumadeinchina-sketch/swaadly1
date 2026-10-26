@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swaadly (Unofficial) — Artisanal Peanut Butter & Brand Study</title>
+    <meta name="description" content="An independent, unofficial editorial brand study and campaign concept for Swaadly." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              antique: {
+                bg: '#0F0C0A',
+                surface: '#171310',
+                gold: '#C5A059',
+                copper: '#B87333',
+                parchment: '#F0EAE1',
+                sepia: '#D4C4B5',
+                wood: '#2E1D13',
+                darkWood: '#1A110B',
+              }
+            },
+            fontFamily: {
+              serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+              cinzel: ['Cinzel', 'serif'],
+              sans: ['"Plus Jakarta Sans"', '-apple-system', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-[#0F0C0A] text-[#F0EAE1] antialiased selection:bg-[#C5A059] selection:text-[#0F0C0A]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

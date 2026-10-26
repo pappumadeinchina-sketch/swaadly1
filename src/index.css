@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Cinzel:wght@400;600;700&display=swap');
+
+:root {
+  --color-gold: #C5A059;
+  --color-copper: #B87333;
+  --color-bg: #0F0C0A;
+  --color-surface: #171310;
+  --color-parchment: #F0EAE1;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0F0C0A;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0F0C0A;
+  color: #F0EAE1;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Subtle, antique scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0F0C0A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2E1D13;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A059;
+}
+
+/* Subtle antique vignette overlay */
+.antique-vignette {
+  background: radial-gradient(ellipse at center, transparent 40%, rgba(10, 8, 7, 0.75) 100%);
+}
+
+/* Subtle warm grain */
+.bg-grain {
+  background-image: radial-gradient(rgba(240, 234, 225, 0.03) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
